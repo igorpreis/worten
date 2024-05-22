@@ -1,0 +1,442 @@
+/* Estilo Formulário */
+.containerContato input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #e51b15;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #af100b;
+}
+
+.containerContato {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: #e51b15;
+    margin: 5px 0 40px 0;
+}
+
+
+
+
+/* Resets Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    justify-content: center;
+}
+
+* {
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*Grids Ajustes Template */
+main {
+    margin: 0 auto;
+    max-width: 900px;
+    margin: 80px auto 200px auto;
+    padding: 0 30px;
+}
+
+.headerCategoria {
+    grid-row: 1 / 1 span;
+    grid-column: 2 / -1;
+}
+
+
+/* Estilos Genericos */
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.white {
+    color: white
+}
+
+.gap10 {
+    gap: 10px
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+/* Estilo Header */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    background-color: #e51b15;
+    height: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px auto;
+    text-decoration: none;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    width: 100%;
+    align-items: center;
+    gap: 25px;
+}
+
+.menuEsquerdo {
+    display: flex;
+    gap: 37px;
+
+}
+
+.menuDireito {
+    display: flex;
+    flex: 1;
+    gap: 25px;
+}
+
+
+.navList {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.navListItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.pesquisaHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    flex: 1;
+    border-radius: 30px;
+    padding: 0 17px 0 20px;
+    box-sizing: border-box;
+    height: 48px;
+}
+
+.pesquisaHeader input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.pesquisaHeader input::placeholder {
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.btnLupa {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    fill: #333;
+}
+
+
+
+
+
+
+/* Estilo Footer */
+footer {
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containerFooter {
+    display: grid;
+    grid-template-columns: auto 3fr 3fr 2fr;
+    grid-template-rows: 30px auto auto;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px 80px 20px;
+    box-sizing: border-box;
+}
+
+
+.footerInfos {
+    min-width: 200px;
+    background-color: #212121;
+    padding: 0 50px 0 0;
+    color: #DDDDDD;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    max-width: 270px;
+}
+
+.appButtons {
+    display: flex;
+    grid-gap: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.appButtons img {
+    width: 130px;
+
+}
+
+.socialButtons img {
+    width: 100%;
+
+}
+
+.logoFooter {
+    width: 240px;
+}
+
+footer li {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.footerBlocks {
+    color: #DDDDDD;
+}
+
+.footerEnd {
+    background-color: #141414;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    color: #777777;
+}
+
+
+
+/* Maior que 1280px*/
+
+header img {
+    width: 120px
+}
+
+.hideDesktop {
+    display: none;
+}
+
+.showMobile {
+    display: none;
+}
+
+/* Breakpoint < 1280px */
+@media (max-width: 1280px) {
+    .hide1280 {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hideDesktop {
+        display: block;
+    }
+
+    .hideTablet {
+        display: none;
+    }
+
+    header img {
+        width: 35px !important;
+    }
+
+    .containerFooter {
+        max-width: 900px;
+    }
+
+    .footerInfos {
+        max-width: 240px;
+        padding-right: 20px
+    }
+}
+
+/* Breakpoint < 768px */
+@media (max-width: 768px) {
+
+    /* Copia para atender o requesito da Media Queria 769 e 1024 */
+    .hideDesktop {
+        display: block;
+    }
+
+    .hideTablet {
+        display: none;
+    }
+
+    header img {
+        width: 35px !important;
+    }
+
+    .containerFooter {
+        max-width: 900px;
+    }
+
+    .footerInfos {
+        max-width: 240px;
+        padding-right: 20px
+    }
+
+    /* Copia para atender o requesito da Media Queria 769 e 1024 */
+
+    .showMobile {
+        display: block;
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    .footerBlocks {
+        display: none;
+    }
+
+
+    .containerFooter {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        width: 80%;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .footerInfos {
+        min-width: 200px;
+        color: #DDDDDD;
+        grid-column: 1 / -1;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        grid-gap: 10px;
+        max-width: 100%;
+    }
+
+    .appButtons {
+        width: 95%;
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        grid-gap: 25px;
+        width: 100%;
+    }
+
+    .appButtons img {
+        width: 200px;
+
+    }
+
+    .logoFooter {
+        width: 304px;
+    }
+
+    .linksFooterMobile {
+        display: grid;
+        width: 100%;
+        grid-column: 1 / -1;
+        font-size: 25px;
+        margin-top: 40px;
+
+    }
+
+    .linksFooterMobileItem {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        border-top: 1px solid #414141;
+        border-bottom: 1px solid #414141;
+        box-sizing: border-box;
+        grid-gap: 10px;
+        margin-bottom: 25px;
+
+    }
+
+
+    .socialButtons {
+        display: none;
+    }
+
+    .socialButtonsMobile {
+        display: flex;
+        grid-column: 1 / -1;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .socialButtonsMobile img {
+        width: 80%;
+
+    }
+
+}
